@@ -1,7 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-console.log("Scrpit By GGAMV");
+var prefix = "top";
 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);  
+});
 
 client.on("ready", () => {
 let channel =     client.channels.get("502827266338979856")
